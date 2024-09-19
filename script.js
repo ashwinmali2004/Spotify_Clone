@@ -19,7 +19,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currfolder = folder;
-    let response = await fetch('./songs/songs.json');
+    let response = await fetch('./songs.json');
     let data = await response.json();
     let songs = data[folder.split('/').pop()];
 
